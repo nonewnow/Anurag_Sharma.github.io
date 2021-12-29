@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    /* background-color: #131314; */
+    /* background-color: #F9F8F9; */
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* nav styles */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    background-color: rgb(22, 21, 21);
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: rgb(230, 43, 68);
+    padding-left: 20px;
+}
+
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav__link {
+    position: fixed;
+    width: 94%;
+    top: 5rem;
+    left: 18px;
+    background-color: lightblue;
+}
+
+.nav__link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav__link a:hover {
+    background-color: lightcoral;
+}
+
+#1lb {
+    font-size: 70px;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (min-width: 1300px) {
+    .nav__link {
+        display: block;
+        position: static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+    }
+    .nav__link a {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+    .hamburger {
+        display: none;
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.body2 {
+    background-color: #202024;
+}
+
+.body1 {
+    background-color: #131314;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0%;
+    /* border: #202024 solid 4px; */
+}
+
+
+/* Create four equal columns that sits next to each other */
+
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0%;
+    /* padding: 0 4px; */
+}
+
+.column img {
+    /* margin-top: 8px; */
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 1000px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 1000px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* .buttons {
+    margin-top: 35px;
+    padding-left: 190px;
+}
+
+.buttons button {
+    background-color: #4e1cc7;
+    color: white;
+    padding: 15px 13px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    margin: 4px 2px;
+} */
+
+.buttons1 {
+    margin-top: 30px;
+}
+
+.button1 {
+    background-color: #4e1cc7;
+    color: white;
+    padding: 15px 13px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    margin: 4px 2px;
+}
+
+.resume {
+    margin-top: -2px;
+}
+
+.pp {
+    /* background-image: url(./assets/Images/back.png); */
+    /* height: 85vh; */
+    height: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 120px;
+    width: 90vw;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    padding-left: 120px;
+    width: 90vw;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.flex-item-left1 {
+    /* background-color: #202024; */
+    padding: 10px;
+    margin: 15px;
+    flex: 30%;
+    /* border: 15px solid #ffffff; */
+    border-radius: 25px;
+}
+
+.flex-item-right1 {
+    /* background-color: #202024; */
+    padding: 10px;
+    margin: 15px;
+    flex: 30%;
+    /* border: 15px solid #131314; */
+    border-radius: 25px;
+}
+
+.flex-item-center1 {
+    /* background-color: #202024; */
+    padding: 10px;
+    margin: 15px;
+    flex: 30%;
+    /* border: 15px solid #131314; */
+    border-radius: 25px;
+}
+
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+
+@media (max-width: 900px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+    .flex-container2 {
+        flex-direction: column;
+    }
+}
+
+.pp1 {
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 43px;
+    padding-top: 60px;
+}
+
+.p11 {
+    color: white;
+}
+
+.p12 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+/* .buttons1 {
+    margin-top: 30px;
+} */
+
+.buttonst button {
+    background-color: #4e1cc7;
+    color: white;
+    padding: 1vw 2vh;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    margin: 4px 2px;
+}
+
+.trial {
+    position: relative;
+    text-align: center;
+}
+
+.buttonst {
+    position: absolute;
+    top: 57%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
+
+.resume {
+    position: relative;
+    text-align: center;
+}
+
+.buttonsone {
+    position: absolute;
+    bottom: 80%;
+    left: 10%;
+}
+
+.buttonsone button {
+    background-color: #4e1cc7;
+    color: white;
+    padding: 2vw 4vh;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    border: none;
+    margin: 8px 4px;
+}
+
+.buttonstwo {
+    position: absolute;
+    bottom: 80%;
+    right: 10%;
+}
+
+.buttonstwo button {
+    background-color: #4e1cc7;
+    color: white;
+    padding: 2vw 4vh;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    border: none;
+    margin: 8px 4px;
+}
+
+.buttonsthree {
+    position: absolute;
+    bottom: 40%;
+    right: 10%;
+}
+
+.buttonsthree button {
+    background-color: #4e1cc7;
+    color: white;
+    padding: 2vw 4vh;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    border: none;
+    margin: 8px 4px;
+}
+
+.buttonsfour {
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+}
+
+.buttonsfour button {
+    background-color: #4e1cc7;
+    color: white;
+    padding: 2vw 4vh;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    border: none;
+    margin: 8px 4px;
+}
+
+.pl {
+    color: #4e1cc7;
+}
+
+
+/* .service2 {
+    position: realtive;
+    text-align: center;
+} */
+
+.servicef {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: #c52712;
+    background-color: #F9F8F9;
+}
+
+.service2 {
+    margin-top: -5px;
+}
+
+
+/* .temp2 {
+    padding: 20px;
+    padding-right: 40px;
+} */
+
+.pp {
+    /* background-image: url(./assets/Images/back.png); */
+    /* height: 85vh; */
+    height: auto;
+}
+
+.flex-container20 {
+    line-height: 0;
+    -webkit-column-count: 3;
+    /* split it into 5 columns */
+    -webkit-column-gap: 0px;
+    /* give it a 5px gap between columns */
+    -moz-column-count: 3;
+    -moz-column-gap: 0px;
+    column-count: 3;
+    column-gap: 0px;
+    margin-top: 0vw;
+    padding: 0%;
+    border: 0cm;
+}
+
+@media (max-width: 800px) {
+    .flex-container20 {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+
+/* .flex-item-left10 {
+    border-bottom: 8px solid #202024;
+}
+
+.flex-item-right10 {
+    border-bottom: 8px solid #202024;
+}
+
+.flex-item-center10 {
+    border-bottom: 8px solid #202024;
+} */
+
+.footer1 {
+    background-color: #4e1cc7;
+    margin-top: -5px;
+}
+
+.footer2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
